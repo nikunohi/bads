@@ -17,6 +17,7 @@ a {
 }
 
 .desktop {
+    margin: 5px;
     display: flex;
     z-index: 2;
 }
