@@ -97,6 +97,21 @@ a {
 
 }
 
+footer {
+
+  position: fixed;
+  bottom: 0;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  z-index: 2;             /* above bg */
+}
+
+footer .type {
+    font-size: 1.125rem;
+}
+
+
 @media screen and (max-width: 649px) {
 
     .type {
