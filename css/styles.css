@@ -17,7 +17,6 @@ a {
 }
 
 .desktop {
-    margin: 5px;
     display: flex;
     z-index: 2;
 }
@@ -30,6 +29,7 @@ a {
 .content {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 75vh;
@@ -57,10 +57,51 @@ a {
     display: block;
 }
 
+
+
+/* .centered-text {
+    font-size: 2vw;
+    max-width: 80%;
+} */
+
+.type {
+    color: white;
+    font-size: 1.5rem;
+    background-color: blue;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.boldtype {
+    font-weight: 700;
+    font-style: normal;
+}
+
+.italictype {
+    color: white;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.bads {
+    font-family: "source-serif-pro", serif;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: blue;
+    font-size: 1.5rem;
+    text-align: center;
+    /* margin-bottom: 0rem; */
+    z-index: 4;
+
+}
+
 @media screen and (max-width: 649px) {
 
     .type {
         line-height: 4rem;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     .desktop {
@@ -73,25 +114,4 @@ a {
         justify-content: center;
         align-items: center;
     }
-}
-
-/* .centered-text {
-    font-size: 2vw;
-    max-width: 80%;
-} */
-
-.type {
-    color: white;
-    font-size: 1.5rem;
-    background-color: blue;
-}
-
-.boldtype {
-    font-weight: 700;
-    font-style: normal;
-}
-
-.italictype {
-    font-weight: 400;
-    font-style: italic;
 }
