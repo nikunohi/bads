@@ -7,7 +7,7 @@ html {
 html,
 body {
     height: 100%;
-    background-color: black;
+    background-color: white;
 }
 
 a {
@@ -25,6 +25,18 @@ p {
     margin: 0px;
 }
 
+.back {
+    position: fixed;
+    bottom: 10px;
+    z-index: 2;
+    color: white;
+    font-size: 1.5rem;
+    background-color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+
+}
 
 img {
     filter: grayscale(100%);
@@ -58,8 +70,10 @@ img:hover {
 }
 
 .bg-img {
+    padding-top: 350px;
     position: absolute;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 75vh;
@@ -72,8 +86,8 @@ img:hover {
 
 .bg-img img {
 
-    width: 280px;
-    height: 210px;
+    width: 450px;
+    /* height: 210px; */
     display: block;
 }
 
@@ -118,6 +132,7 @@ img:hover {
     background-color: black;
     padding-left: 5px;
     padding-right: 5px;
+    padding-bottom: 5px;
     line-height: 6rem;
     /* background-color: black; */
     font-size: 5rem;
@@ -155,6 +170,7 @@ footer .type {
     p {
         margin: 0;
     }
+
     .bads {
         font-size: 3.5rem;
         line-height: 5.6rem;
