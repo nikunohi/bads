@@ -7,7 +7,7 @@ const barSketch = (p) => {
   let speedx, speedy, lox, loy;
 
   p.preload = () => {
-    inter = p.loadFont('../../typefaces/Inter-Regular.otf');
+    inter = p.loadFont('./typefaces/Inter-Regular.otf');
   };
 
   p.setup = () => {
@@ -19,7 +19,7 @@ const barSketch = (p) => {
 
     p.angleMode(p.DEGREES);
 
-    opentype.load('../../typefaces/Inter-Regular.otf', (err, font) => {
+    opentype.load('./typefaces/Inter-Regular.otf', (err, font) => {
       if (err) {
         console.error(err);
       } else {
