@@ -1,0 +1,208 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+html,
+body {
+    height: 100%;
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-size: 1.6rem;
+    /* font-size 1.6rem is now the same as 16px */
+    line-height: 1.6;
+    background-color: #EFEFEF;
+}
+
+
+
+
+@font-face {
+    font-family: "Overused Grotesk";
+    src: url("../typefaces/OverusedGrotesk-VF.woff2") format("woff2-variations");
+    font-weight: 800;
+    font-stretch: 100%;
+    font-style: oblique -10deg;
+}
+
+h1 {
+    font-family: "Overused Grotesk", sans-serif;
+    line-height: 5.5rem;
+    font-size: 6rem;
+    letter-spacing: -.02rem;
+
+}
+
+h2 {
+    font-family: "ibm-plex-serif", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2.75rem;
+    letter-spacing: -.09rem;
+    line-height: 2.85rem;
+    max-width: 80vw;
+
+}
+
+h3 {
+    font-family: "inter-variable", sans-serif;
+    font-size: 2.5rem;
+
+    font-variation-settings:
+        "wght" 500,
+        "slnt" 0,
+        "wdth" 80;
+
+    letter-spacing: -0.09em;
+    display: inline-block;
+    transform: scaleX(0.75);
+    transform-origin: left;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.handle {
+    border-style: solid;
+    border-width: .2rem;
+    border-radius: 150rem;
+    width: 110px;
+    height: 27.5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 45px;
+    margin: 0;
+}
+
+.ig {
+    border-style: solid;
+    border-width: .2rem;
+    border-radius: 250rem;
+    width: 25px;
+    height: 27.5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3.5px;
+
+}
+
+.archive {
+    border-style: solid;
+    border-width: .2rem;
+    border-radius: 250rem;
+    width: 70px;
+    height: 27.5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.rules {
+    border-style: solid;
+    border-width: .2rem;
+    border-radius: 250rem;
+    width: 55px;
+    height: 27.5px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    right: 5px;
+    bottom: 5vh;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+
+.paddedCon {
+    padding: 10px;
+
+}
+
+.body-box {
+    padding-top: 30px;
+
+
+}
+
+.body-image {
+    margin-top: 15px;
+
+}
+
+.body-image img {
+    width: 200px;
+    
+    /* max-width: 50vw; */
+}
+
+
+@media (min-width: 640px) {
+
+    .body-box h2 {
+        max-width: 30vw;
+    }
+
+    h1 {
+        max-width: 35vw;
+    }
+
+}
+
+@media (min-width: 500px && max-width: 640px) {
+
+    .body-box h2 {
+        max-width: 50vw;
+    }
+
+    h1 {
+        max-width: 55vw;
+    }
+
+
+}
