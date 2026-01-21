@@ -14,7 +14,7 @@ const barSketch = (p) => {
     canvasbar = p.createCanvas(p.windowWidth, p.windowHeight);
     canvasbar.position(0, 0);
     canvasbar.style('position', 'fixed');
-    canvasbar.style('z-index', '-2');
+    canvasbar.style('z-index', '-5');
     canvasbar.style('pointer-events', 'none');
 
     p.angleMode(p.DEGREES);
