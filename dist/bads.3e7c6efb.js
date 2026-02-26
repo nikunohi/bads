@@ -714,12 +714,18 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"dW7hi":[function(require,module,exports,__globalThis) {
+// import 'locomotive-scroll/dist/locomotive-scroll.css';
+// import LocomotiveScroll from 'locomotive-scroll';
+// const scroll = new LocomotiveScroll();
+// console.log('scroll initialized');
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _locomotiveScrollCss = require("locomotive-scroll/dist/locomotive-scroll.css");
 var _locomotiveScroll = require("locomotive-scroll");
 var _locomotiveScrollDefault = parcelHelpers.interopDefault(_locomotiveScroll);
-const scroll = new (0, _locomotiveScrollDefault.default)();
-console.log('scroll initialized');
+const scroll = new (0, _locomotiveScrollDefault.default)({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true
+});
 
 },{"locomotive-scroll/dist/locomotive-scroll.css":"2Zddr","locomotive-scroll":"n2ryY","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"2Zddr":[function() {},{}],"n2ryY":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
