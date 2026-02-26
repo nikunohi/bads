@@ -6,3 +6,5 @@ node_modules/
 
 # gh-pages cache
 node_modules/.cache/gh-pages/
+.parcel-cache/data.mdb
+.parcel-cache/data.mdb
