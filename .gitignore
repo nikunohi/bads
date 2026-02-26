@@ -3,12 +3,11 @@ node_modules/
 
 # Parcel cache
 .parcel-cache/
-.parcel-cache/data.mdb
+
 
 # gh-pages cache
-node_modules/.cache/gh-pages/
+
 
 # Build output
 dist/
-.parcel-cache/data.mdb
-dist/index.html
+
