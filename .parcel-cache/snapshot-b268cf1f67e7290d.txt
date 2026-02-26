@@ -15,7 +15,7 @@
 140D:\git-repositories\bads\node_modules\.cache\gh-pages\https!github.com!nikunohi!bads.git\node_modules\@swc\helpers\esm\_non_iterable_rest.js134165747220000000 0
 64D:\git-repositories\bads\node_modules\@swc\helpers\esm\_throw.js134157987620000000 0
 132D:\git-repositories\bads\node_modules\.cache\gh-pages\https!github.com!nikunohi!bads.git\node_modules\@parcel\watcher\src\binding.cc134165747180000000 0
-35D:\git-repositories\bads\index.html134165734520000000 0
+35D:\git-repositories\bads\index.html134165773220000000 0
 80D:\git-repositories\bads\node_modules\@swc\helpers\src\_class_name_tdz_error.mjs134157987680000000 0
 61D:\git-repositories\bads\node_modules\micromatch\node_modules134165744172800000 1
 126D:\git-repositories\bads\node_modules\.cache\gh-pages\https!github.com!nikunohi!bads.git\dist\archive.43cc1981.js.map.32924.bk134165746995200000 0
@@ -3140,7 +3140,7 @@
 152D:\git-repositories\bads\node_modules\.cache\gh-pages\https!github.com!nikunohi!bads.git\node_modules\caniuse-lite\data\features\css-deviceadaptation.js134165747240000000 0
 135D:\git-repositories\bads\node_modules\.cache\gh-pages\https!github.com!nikunohi!bads.git\node_modules\caniuse-lite\data\features\sxg.js134165747260000000 0
 146D:\git-repositories\bads\node_modules\.cache\gh-pages\https!github.com!nikunohi!bads.git\node_modules\caniuse-lite\data\features\css-dir-pseudo.js134165747240000000 0
-40D:\git-repositories\bads\dist\index.html134165740860000000 0
+40D:\git-repositories\bads\dist\index.html134165776480000000 0
 152D:\git-repositories\bads\node_modules\.cache\gh-pages\https!github.com!nikunohi!bads.git\node_modules\caniuse-lite\data\features\css-display-contents.js134165747240000000 0
 32D:\git-repositories\bads\info\js134135630465500000 1
 85D:\git-repositories\bads\node_modules\caniuse-lite\data\features\css-text-box-trim.js134157987660000000 0
