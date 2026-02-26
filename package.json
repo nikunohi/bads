@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html info/index.html --public-url ./",
-    "deploy": "gh-pages -d dist -r https://github.com/nikunohi/bads.git -t"
+    "deploy": "gh-pages -d dist -r https://github.com/nikunohi/bads.git -b gh-pages"
   },
   "keywords": [],
   "author": "",
