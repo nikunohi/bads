@@ -10,3 +10,5 @@ node_modules/.cache/gh-pages/
 
 # Build output
 dist/
+.parcel-cache/data.mdb
+dist/index.html
