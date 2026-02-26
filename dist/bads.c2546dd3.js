@@ -1,2 +1,0 @@
-function o(o){return o&&o.__esModule?o.default:o}var e={};e=import.meta.resolve("gDbo4");var r={};r=import.meta.resolve("bEJeg"),console.log("imgswap.js loaded"),setTimeout(function(){},3e3),document.querySelector("#blogo").onmouseenter=function(){console.log("hover"),document.querySelector("#blogo").src=o(r)},document.querySelector("#blogo").onmouseleave=function(){console.log("hover"),document.querySelector("#blogo").src=o(e)};
-//# sourceMappingURL=bads.c2546dd3.js.map
