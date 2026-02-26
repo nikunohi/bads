@@ -1,4 +1,4 @@
-import interFontLink from 'url:../typefaces/InterpRegular.otf';
+import interFontUrl from 'url:../typefaces/Inter-Regular.otf';
 
 const barTwoSketch = (p) => {
     let canvasbar;
@@ -10,7 +10,7 @@ const barTwoSketch = (p) => {
     let speedxTwo = 1;
 
     p.preload = () => {
-        inter = p.loadFont(interFontLink);
+        inter = p.loadFont(interFontUrl);
     };
 
     p.setup = () => {
@@ -22,7 +22,7 @@ const barTwoSketch = (p) => {
 
         p.angleMode(p.DEGREES);
 
-        opentype.load(interFontLink, (err, font) => {
+        opentype.load(interFontUrl, (err, font) => {
             if (err) {
                 console.error(err);
             } else {
