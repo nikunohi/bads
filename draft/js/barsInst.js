@@ -1,3 +1,5 @@
+import interFontLink from 'url:../../typefaces/Inter-Regular.otf';
+
 const barTwoSketch = (p) => {
     let canvasbar;
     let inter;
@@ -8,7 +10,7 @@ const barTwoSketch = (p) => {
     let speedxTwo = 1;
 
     p.preload = () => {
-        inter = p.loadFont('./typefaces/Inter-Regular.otf');
+        inter = p.loadFont(interFontLink);
     };
 
     p.setup = () => {
@@ -20,7 +22,7 @@ const barTwoSketch = (p) => {
 
         p.angleMode(p.DEGREES);
 
-        opentype.load('./typefaces/Inter-Regular.otf', (err, font) => {
+        opentype.load(interFontLink, (err, font) => {
             if (err) {
                 console.error(err);
             } else {
@@ -39,8 +41,8 @@ const barTwoSketch = (p) => {
     p.draw = () => {
         p.clear();
 
-        if (loxTwo < -515) loxTwo = p.width;
-        if (loxTwo > p.width + 300) loxTwo = -500;
+        // if (loxTwo < -515) loxTwo = p.width;
+        if (loxTwo > p.width) loxTwo = -500;
 
         loxTwo += speedxTwo;
 
@@ -50,7 +52,7 @@ const barTwoSketch = (p) => {
 
     function barfullTwo() {
         p.push();
-        p.translate(0, 62.5);
+        p.translate(0, 62.5+19);
         p.rotate(0);
         p.scale(1);
 

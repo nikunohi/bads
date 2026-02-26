@@ -1,13 +1,15 @@
+import interFontLink from 'url:../../typefaces/Inter-Regular.otf';
+
 const barthreeSketch = (p) => {
   let canvasbar;
   let inter;
   let otFont = null;
 
   let counter = 0;
-  let speedx, speedy, lox, loy;
+  let speedx, speedy, lox;
 
   p.preload = () => {
-    inter = p.loadFont('./typefaces/Inter-Regular.otf');
+    inter = p.loadFont(interFontLink);
   };
 
   p.setup = () => {
@@ -19,7 +21,7 @@ const barthreeSketch = (p) => {
 
     p.angleMode(p.DEGREES);
 
-    opentype.load('./typefaces/Inter-Regular.otf', (err, font) => {
+    opentype.load(interFontLink, (err, font) => {
       if (err) {
         console.error(err);
       } else {
@@ -29,8 +31,8 @@ const barthreeSketch = (p) => {
 
     speedx = -1;
     speedy = 1;
-    lox = p.windowHeight / 2 + 3000;
-    loy = p.windowWidth / 2;
+    lox = p.windowHeight / 3;
+ 
   };
 
   p.windowResized = () => {
@@ -41,13 +43,11 @@ const barthreeSketch = (p) => {
   p.draw = () => {
     p.clear();
 
-    if (lox < -370) lox = p.width;
-    if (lox > p.width + 300) lox = 0;
-    if (loy < -300) loy = p.height;
-    if (loy > p.height + 50) loy = -300;
+    if (lox < -325) lox = p.width;
+   
 
     lox += speedx;
-    loy = 0;
+ 
 
     barfull(0, 1);
     counter++;
@@ -55,8 +55,9 @@ const barthreeSketch = (p) => {
 
   function barfull() {
     p.push();
-    p.translate(0, 110);
+    p.translate(0, 110+10);
     p.rotate(0);
+    p.fill('#D3D3D3');
     p.scale(1 );
 
     p.rect(0, 12, p.windowWidth + 10, 20);
@@ -74,7 +75,7 @@ const barthreeSketch = (p) => {
 
     textTracking(
       otFont,
-      'WELCOMING ALL DESIGNERS',
+      'WELCOMING ALL DESIGNERS — EVEN THE WORST',
       0,
       28,
       16,

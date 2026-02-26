@@ -1,25 +1,27 @@
+import interFontLink from 'url:../../typefaces/Inter-Regular.otf';
+
 const barSketch = (p) => {
   let canvasbar;
   let inter;
   let otFont = null;
 
   let counter = 0;
-  let speedx, speedy, lox, loy;
+  let speedx, speedy, lox;
 
   p.preload = () => {
-    inter = p.loadFont('./typefaces/Inter-Regular.otf');
+    inter = p.loadFont(interFontLink);
   };
 
   p.setup = () => {
     canvasbar = p.createCanvas(p.windowWidth, p.windowHeight);
     canvasbar.position(0, 0);
     canvasbar.style('position', 'fixed');
-    canvasbar.style('z-index', '-5');
+    canvasbar.style('z-index', '-4');
     canvasbar.style('pointer-events', 'none');
 
     p.angleMode(p.DEGREES);
 
-    opentype.load('./typefaces/Inter-Regular.otf', (err, font) => {
+    opentype.load(interFontLink, (err, font) => {
       if (err) {
         console.error(err);
       } else {
@@ -30,7 +32,7 @@ const barSketch = (p) => {
     speedx = -1;
     speedy = 1;
     lox = p.windowHeight / 2;
-    loy = p.windowWidth / 2;
+
   };
 
   p.windowResized = () => {
@@ -41,24 +43,23 @@ const barSketch = (p) => {
   p.draw = () => {
     p.clear();
 
-    if (lox < -370) lox = p.width;
-    if (lox > p.width + 300) lox = 0;
-    if (loy < -300) loy = p.height;
-    if (loy > p.height + 50) loy = -300;
+    if (lox < -340) lox = p.width;
+
+
 
     lox += speedx;
-    loy = 0;
+
 
     barfull(0, 1);
-    counter++;
+
   };
 
   function barfull() {
     p.push();
-    p.translate(0, 30);
+    p.translate(0, 30 + 20);
     p.rotate(0);
     p.scale(1);
-
+    p.fill('#efefef');
     p.rect(0, 12, p.windowWidth + 10, 20);
     bartext(lox);
 

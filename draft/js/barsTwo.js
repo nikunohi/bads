@@ -100,7 +100,7 @@ function draw() {
 
 
     
-    barfullTwo(0);
+    barfullTwo(30);
     counter += 1;
 
 
@@ -109,11 +109,16 @@ function draw() {
 
 
 
-function barfullTwo(rot, sc) {
+function barfullTwo(rot) {
     push();
 
-    translate(0, 70)
-    rotate(0);
+    let barY = 70;
+    let barH  =  20;
+    let barW = windowWidth + 10;
+
+
+    translate(barW/2, barY+barH/2)
+    rotate(rot);
     scale(1);
 
     rect(0, 12, windowWidth + 10, 20);
@@ -126,6 +131,7 @@ function bartextTwo(lx) {
     push();
     translate(lx + 2, 0);
     scale(.8, 1);
+   
 
 
     fill(0);

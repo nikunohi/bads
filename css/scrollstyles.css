@@ -1,0 +1,32 @@
+/* @import 'locomotive-scroll/dist/locomotive-scroll.css'; */
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+
+html,
+body {
+    height: 100%;
+
+}
+
+
+body {
+    font-size: 1.6rem;
+    /* font-size 1.6rem is now the same as 16px */
+}
+
+section {
+    height: 100vh;
+}
