@@ -1,4 +1,4 @@
-import interFontUrl from 'url:../typefaces/Inter-Regular.otf';
+import interFontUrl from 'url:../../typefaces/Inter-Regular.otf';
 
 const barTwoSketch = (p) => {
     let canvasbar;
