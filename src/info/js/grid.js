@@ -52,6 +52,9 @@
 const gridSketch = (p) => {
     let canvasgrid;
 
+    console.log("info/grid.js loaded");
+
+
     const getPageHeight = () => {
         return Math.max(
             document.body.scrollHeight,

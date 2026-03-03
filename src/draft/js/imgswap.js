@@ -2,7 +2,6 @@ console.log("imgswap.js loaded");
 import bOne from 'url:../../images/bads-letter-default.png';
 import bTwo from 'url:../../images/bads-letter-hover.png';
 
-
 setTimeout(function () {
     // document.querySelector('#blogo').style.color = "pink";
 

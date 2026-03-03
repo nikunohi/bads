@@ -8,6 +8,9 @@ const barSketch = (p) => {
   let counter = 0;
   let speedx, speedy, lox, loy;
 
+
+  console.log("info/barsInstTwo.js loaded");
+
   p.preload = () => {
     inter = p.loadFont(interFontLink);
   };
