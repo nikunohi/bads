@@ -1,20 +1,35 @@
+// {
+//   "dependencies": {
+//     "locomotive-scroll": "^5.0.1"
+//   },
+//   "name": "bads",
+//   "version": "1.0.0",
+//   "description": "Digital posters for the BAD Design Club",
+//   "scripts": {
+//     "dev": "parcel src/index.html src/info/index.html",
+//     "build": "parcel build src/index.html src/info/index.html --dist-dir docs --public-url ./"
+//   },
+//   "keywords": [],
+//   "author": "",
+//   "license": "ISC",
+//   "devDependencies": {
+//     "parcel": "^2.16.4"
+//   }
+// }
+
+
 {
-  "dependencies": {
-    "locomotive-scroll": "^5.0.1"
-  },
   "name": "bads",
   "version": "1.0.0",
   "description": "Digital posters for the BAD Design Club",
-  
-"scripts": {
-  "dev": "parcel src/index.html src/info/index.html",
-  "build": "parcel build src/index.html src/info/index.html --dist-dir docs --public-url ./"
-},
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "scripts": {
+    "dev": "parcel src/index.html src/info/index.html",
+    "build": "parcel build src/index.html src/info/index.html --dist-dir docs --public-url ./"
+  },
+  "dependencies": {
+    "locomotive-scroll": "^5.0.1"
+  },
   "devDependencies": {
-    "gh-pages": "^6.3.0",
     "parcel": "^2.16.4"
   }
 }
