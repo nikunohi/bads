@@ -207,7 +207,7 @@
       });
     }
   }
-})({"93v64":[function(require,module,exports,__globalThis) {
+})({"isS7I":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -215,7 +215,7 @@ var HMR_SERVER_PORT = 1234;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "f3e508fdb828852a";
+module.bundle.HMR_BUNDLE_ID = "ec16a1134e851651";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_SERVER_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -713,7 +713,10 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     }
 }
 
-},{}],"lhpGb":[function(require,module,exports,__globalThis) {
+},{}],"bPkI4":[function(require,module,exports,__globalThis) {
+var _mainJs = require("../js/main.js");
+
+},{"../js/main.js":"lhpGb"}],"lhpGb":[function(require,module,exports,__globalThis) {
 var _altstylesCss = require("../css/altstyles.css");
 var _imgswapJs = require("../info/js/imgswap.js");
 var _gridJs = require("../info/js/grid.js");
@@ -937,6 +940,6 @@ new p5(barSketch);
 },{"url:../../typefaces/Inter-Regular.otf":"4viHe","@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"4viHe":[function(require,module,exports,__globalThis) {
 module.exports = module.bundle.resolve("Inter-Regular.7a6316b7.otf") + "?" + Date.now();
 
-},{}]},["93v64","lhpGb"], "lhpGb", "parcelRequire42ce", {}, "./", "/")
+},{}]},["isS7I","bPkI4"], "bPkI4", "parcelRequire42ce", {}, "./", "/")
 
-//# sourceMappingURL=info.b828852a.js.map
+//# sourceMappingURL=info.4e851651.js.map
