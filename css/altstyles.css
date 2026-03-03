@@ -343,12 +343,12 @@ a {
     border-width: 1pt;
     border-radius: 250rem;
     width: 26px;
-    height: 275px;
+    height: 280px;
     position: fixed;
     display: flex;
     align-items: center;
-    margin-top: 7.75px;
-    left: 9.25px;
+    margin-top: 4px;
+    left: 8.5px;
 
 
 }
