@@ -8,7 +8,7 @@
   
   "scripts": {
     "dev": "parcel index.html",
-    "build": "parcel build index.html info/index.html --public-url ./",
+    "build": "parcel build src/index.html src/info/index.html --public-url ./",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
