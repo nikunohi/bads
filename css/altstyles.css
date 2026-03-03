@@ -50,13 +50,15 @@ header {
     flex-direction: row-reverse;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     background-color: #D3D3D3;
     border-bottom-style: solid;
     border-width: .1rem;
     padding: 5px 5px 6.5px 5px;
     /* width: 10%; */
 }
+
+
 
 
 .paddedCon {
@@ -68,11 +70,13 @@ header {
 
 .body-box {
     padding-top: 12.5px;
+
 }
 
 .body-box h2 {
     animation: textChange 1s 1;
     animation-timing-function: steps(5, ease-in-out);
+
 }
 
 .body-box:nth-child(2) {
@@ -94,6 +98,10 @@ header {
     animation-timing-function: steps(5, ease-in-out);
     max-width: 48vw;
 } */
+
+.body-box:nth-child(3) h2 {
+    /* color: #a0a0a0; */
+}
 
 .body-box:nth-child(4) h2 {
     max-width: 45vw;
@@ -121,9 +129,9 @@ header {
 
 h1 {
     font-family: "Overused Grotesk", sans-serif;
-    line-height: 9.25rem;
+    line-height: 9.5rem;
     font-size: 10.667rem;
-    letter-spacing: -.02rem;
+    letter-spacing: -2.5%;
 
 }
 
@@ -152,7 +160,7 @@ h2 {
     line-height: 3rem; */
     font-size: 2.5rem;
     letter-spacing: -.09rem;
-    line-height: 3rem;
+    line-height: 3.3rem;
     max-width: 85vw;
     /* animation: textChange 1s 1;
     animation-timing-function: steps(5, ease-in-out); */
@@ -220,7 +228,7 @@ h2 {
 
 h3 {
     font-family: "inter-variable", sans-serif;
-    font-size: 2.5rem;
+    font-size: 3rem;
 
     font-variation-settings:
         "wght" 500,
@@ -245,7 +253,7 @@ a {
     border-width: .1rem;
     border-radius: 250rem;
     width: 90px;
-    height: 27.5px;
+    height: 32px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -259,24 +267,24 @@ a {
 .rules {
     background-color: white;
     border-style: solid;
-    border-width: .1rem;
+    border-width: .2rem;
     border-radius: 250rem;
     width: 75px;
-    height: 27.5px;
+    height: 30px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 70px;
+    padding-left: 76px;
     padding-right: 52.5px;
     margin-top: 5px;
-    margin-right: 2.5px;
+    margin-right: 5px;
 }
 
 .rules:hover {
     background-color: black;
-    transition: background-color 0.5s;
+    transition: background-color 0.35s;
     transition-timing-function: steps(4, end);
 }
 
@@ -287,16 +295,16 @@ a {
 .home {
     background-color: white;
     border-style: solid;
-    border-width: .1rem;
+    border-width: .2rem;
     border-radius: 250rem;
     width: 70px;
-    height: 27.5px;
+    height: 30px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 70px;
+    padding-left: 76px;
     padding-right: 55px;
     margin-top: 5px;
     margin-right: 2.5px;
@@ -304,7 +312,7 @@ a {
 
 .home:hover {
     background-color: black;
-    transition: background-color 0.5s;
+    transition: background-color 0.35s;
     transition-timing-function: steps(4, end);
 }
 
@@ -361,7 +369,7 @@ a {
     writing-mode: vertical-rl;
     text-orientation: upright;
     letter-spacing: -1rem;
-    padding-top: 14px;
+    padding-top: 12.25px;
     padding-left: 15.25px;
 
 }
@@ -384,7 +392,13 @@ a {
         transform-origin: top;
         transform: scaleY(0);
         opacity: 0%;
+        background-color: black;
     }
+
+    42.5% {
+        background-color: white;
+    }
+
 
     75% {
         transform-origin: top;
@@ -551,7 +565,7 @@ footer {
 }
 
 
-@media (min-width: 640px) {
+@media (min-width: 780px) {
     body {
         padding-bottom: 0;
     }
@@ -568,10 +582,16 @@ footer {
 
 }
 
-@media (min-width: 500px) and (max-width: 640px) {
+@media (min-width: 500px) and (max-width: 780px) {
+    .title-type h1 {
+        font-size: 7.8rem;
+        line-height: 7.2rem;
+    }
 
     .body-box h2 {
         max-width: 50vw;
+
+
     }
 
     h1 {
@@ -579,7 +599,7 @@ footer {
     }
 
     .body-box:nth-child(4) h2 {
-        max-width: 75vw;
+        max-width: 55vw;
     }
 
 
@@ -599,11 +619,14 @@ footer {
     }
 
     .body-box h2 {
-        max-width: 80vw;
+        max-width: 73vw;
+        /* font-size: 3.3rem;
+        line-height: 3rem; */
     }
 
     .body-box:nth-child(4) h2 {
-        max-width: 75vw;
+        max-width: 73vw;
+        padding-top: 5px;
     }
 
     .body-footer h2 {
@@ -624,10 +647,16 @@ footer {
 
     }
 
+    .body-box h2 {
+        max-width: 70vw;
+        /* font-size: 3.3rem;
+        line-height: 3rem; */
+    }
+
     .body-box:nth-child(4) h2 {
 
         padding-top: 5px;
-        max-width: 75vw;
+        max-width: 70vw;
         /* padding-bottom: 12.5px; */
 
 

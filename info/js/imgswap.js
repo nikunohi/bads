@@ -21,8 +21,8 @@
 
 console.log("imgswap.js loaded");
 
-import cOne from 'url:../../images/b.svg';
-import cTwo from 'url:../../images/b-2.svg';
+import cOne from 'url:../../images/bads-letter-default.png';
+import cTwo from 'url:../../images/bads-letter-hover.png';
 
 window.addEventListener('DOMContentLoaded', () => {
   const blogo = document.querySelector('#blogo');

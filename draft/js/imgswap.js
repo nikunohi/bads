@@ -1,6 +1,6 @@
 console.log("imgswap.js loaded");
-import bOne from 'url:../../images/b.svg';
-import bTwo from 'url:../../images/b-2.svg';
+import bOne from 'url:../../images/bads-letter-default.png';
+import bTwo from 'url:../../images/bads-letter-hover.png';
 
 
 setTimeout(function () {

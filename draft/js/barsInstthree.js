@@ -16,7 +16,7 @@ const barthreeSketch = (p) => {
     canvasbar = p.createCanvas(p.windowWidth, p.windowHeight);
     canvasbar.position(0, 0);
     canvasbar.style('position', 'fixed');
-    canvasbar.style('z-index', '-5');
+    canvasbar.style('z-index', '-1');
     canvasbar.style('pointer-events', 'none');
 
     p.angleMode(p.DEGREES);
@@ -57,7 +57,7 @@ const barthreeSketch = (p) => {
     p.push();
     p.translate(0, 110+10);
     p.rotate(0);
-    p.fill('#D3D3D3');
+    p.fill('#DDDDDD');
     p.scale(1 );
 
     p.rect(0, 12, p.windowWidth + 10, 20);
