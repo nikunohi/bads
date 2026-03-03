@@ -27,7 +27,7 @@ const gridSketch = (p) => {
         canvasgrid.style('pointer-events', 'none');
 
         p.angleMode(p.DEGREES);
-    };
+    };  
 
     p.windowResized = () => {
         const pageHeight = getPageHeight();
