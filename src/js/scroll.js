@@ -11,12 +11,6 @@ console.log('scroll initialized');
 const scroll = new LocomotiveScroll({
   el: document.querySelector('[data-scroll-container]'),
   smooth: true,
-});
-
-const scrollmobile = new LocomotiveScroll({
-  el: document.querySelector('[data-scroll-container]'),
-  smooth: true,
-  // Configuration for mobile devices
   mobile: {
     smooth: true,
     breakpoint: 0, // Setting breakpoint to 0 ensures it applies to all mobile sizes
@@ -26,4 +20,8 @@ const scrollmobile = new LocomotiveScroll({
     smooth: true,
     breakpoint: 0,
   },
+});
+
+window.addEventListener("resize", () => {
+  scroll.update(); 
 });
