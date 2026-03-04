@@ -58,6 +58,8 @@ const barthreeSketch = (p) => {
     p.translate(0, 110+10);
     p.rotate(0);
     p.fill('#DDDDDD');
+    
+    // p.fill('#efefef');
     p.scale(1 );
 
     p.rect(0, 12, p.windowWidth + 10, 20);

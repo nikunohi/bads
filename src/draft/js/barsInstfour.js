@@ -74,8 +74,8 @@ const barfourSketch = (p) => {
     for (let row = 0; row < totalRows; row++) {
       // let y = row * rowHeight;
 
-
       col1 = p.color('#efefef');
+      // col1 = p.color('#efefef');
       col2 = p.color(0);
 
       if (row % 2 == 0) p.fill(col1);
@@ -153,7 +153,7 @@ const barfourSketch = (p) => {
     p.translate(0, p.windowHeight * .85);
     p.rotate(0);
     p.scale(1);
-    p.rect(0, 30, p.width+5, rowHeight);
+    p.rect(0, 30, p.width + 5, rowHeight);
 
 
     for (let row = 0; row < totalRows; row++) {
