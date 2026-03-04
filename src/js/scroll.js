@@ -23,5 +23,6 @@ const scroll = new LocomotiveScroll({
 });
 
 window.addEventListener("resize", () => {
-  scroll.update(); 
+  scroll.update();
 });
+
