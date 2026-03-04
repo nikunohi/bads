@@ -13,9 +13,17 @@ const scroll = new LocomotiveScroll({
   smooth: true,
 });
 
-const locoScroll = new LocomotiveScroll({
-  el: document.querySelector("[data-scroll-container]"),
+const scrollmobile = new LocomotiveScroll({
+  el: document.querySelector('[data-scroll-container]'),
   smooth: true,
-  smartphone: { smooth: true },
-  tablet: { smooth: true }
+  // Configuration for mobile devices
+  mobile: {
+    smooth: true,
+    breakpoint: 0, // Setting breakpoint to 0 ensures it applies to all mobile sizes
+  },
+  // Configuration for tablets
+  tablet: {
+    smooth: true,
+    breakpoint: 0,
+  },
 });
