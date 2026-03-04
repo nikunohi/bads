@@ -19,7 +19,7 @@ const scroll = new LocomotiveScroll({
   tablet: {
     smooth: true,
     breakpoint: 0,
-  },
+  }
 });
 
 window.addEventListener("resize", () => {
