@@ -150,10 +150,14 @@ const barfourSketch = (p) => {
 
   function full() {
     p.push();
+
     p.translate(0, p.windowHeight * .85);
     p.rotate(0);
     p.scale(1);
+
+    p.strokeWeight(2);
     p.rect(0, 30, p.width + 5, rowHeight);
+
 
 
     for (let row = 0; row < totalRows; row++) {

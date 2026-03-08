@@ -373,12 +373,15 @@ a {
 
 .link-hover {
     background-color: 'rgba(255, 69, 0,0)';
+    font-style: italic;
     transition: background-color .35s;
     transition-timing-function: steps(4, end);
+    
 }
 
 .link-hover:hover {
     background-color: orangered;
+    
 
 
 }

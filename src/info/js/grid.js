@@ -74,7 +74,7 @@ const gridSketch = (p) => {
         canvasgrid.style('position', 'fixed');
         // canvasgrid.style('top', '0');
         // canvasgrid.style('left', '0');
-        canvasgrid.style('z-index', '-4');
+        canvasgrid.style('z-index', '-5');
         canvasgrid.style('pointer-events', 'none');
 
         p.angleMode(p.DEGREES);
@@ -89,8 +89,9 @@ const gridSketch = (p) => {
 
     p.draw = () => {
         p.clear();
-        p.stroke(150);
-        p.drawingContext.setLineDash([5, 5]);
+        p.stroke(125);
+        p.strokeWeight(.5);
+        p.drawingContext.setLineDash([1, 3.5]);
 
         p.line(p.windowWidth / 8, 0, p.windowWidth / 8, p.height);
         p.line(0, p.windowHeight / 13 * 6.15, p.windowWidth, p.windowHeight / 13 * 6.15);
