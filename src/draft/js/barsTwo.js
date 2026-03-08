@@ -60,7 +60,7 @@ function windowResized() {
 }
 
 function draw() {
-    background('#efefef');
+    background('#fa0000');
 
     // square(mouseX, mouseY, 200);
 
