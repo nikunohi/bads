@@ -86,11 +86,11 @@ header {
 
 
 .paddedCon:not(:nth-child(2)) h1{
-    color:#cccccc;
+    color:#d5d5d5;
 }
 
 .paddedCon:not(:nth-child(2)) .title-line{
-    color:rgb(145, 145, 145);
+    color:rgb(185, 185, 185);
 }
 
 
