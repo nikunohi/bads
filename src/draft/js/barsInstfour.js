@@ -74,7 +74,7 @@ const barfourSketch = (p) => {
     for (let row = 0; row < totalRows; row++) {
       // let y = row * rowHeight;
 
-      col1 = p.color('#efefef');
+      col1 = p.color(255, 255, 255);
       // col1 = p.color('#efefef');
       col2 = p.color(0);
 

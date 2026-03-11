@@ -68,8 +68,36 @@ header {
 .paddedCon {
     padding: 10px;
     padding-top: 2vh;
+    padding-bottom: 300px;
+
 
 }
+
+/* .paddedCon:not( :first-child)  {
+
+} */
+.paddedCon:not(:nth-child(2)) h2{
+    color:#a0a0a0;  
+}
+
+/* .paddedCon:not(:nth-child(2)):hover h1{
+    color:black;
+} */
+
+
+.paddedCon:not(:nth-child(2)) h1{
+    color:#cccccc;
+}
+
+.paddedCon:not(:nth-child(2)) .title-line{
+    color:rgb(145, 145, 145);
+}
+
+
+.paddedCon:nth-child(3) {
+    padding-bottom: 0;
+}
+
 
 
 .body-box {
@@ -376,15 +404,16 @@ a {
     font-style: italic;
     transition: background-color .35s;
     transition-timing-function: steps(4, end);
-    
+
 }
 
 .link-hover:hover {
     background-color: orangered;
-    
+
 
 
 }
+
 
 .baddesignclub-header {
     z-index: -5;
@@ -397,7 +426,7 @@ a {
     position: fixed;
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 14px;
     left: 7.5px;
 
 
@@ -419,7 +448,7 @@ a {
     writing-mode: vertical-rl;
     text-orientation: upright;
     letter-spacing: -1rem;
-    padding-top: 13.5px;
+    padding-top: 9px;
     padding-left: 16px;
 
 }

@@ -60,6 +60,7 @@ const barSketch = (p) => {
     p.rotate(0);
     p.scale(1);
     p.fill('#efefef');
+    // p.fill('#e6e6e6');
     p.rect(0, 12, p.windowWidth + 10, 20);
     bartext(lox);
 

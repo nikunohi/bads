@@ -22,14 +22,14 @@ const gridSketch = (p) => {
 
         canvasgrid = p.createCanvas(p.windowWidth, pageHeight);
         canvasgrid.position(0, 0);
-       ` // canvasgrid.style('position', 'fixed');`
+        ` // canvasgrid.style('position', 'fixed');`
         // canvasgrid.style('top', '0');
         // canvasgrid.style('left', '0');
         canvasgrid.style('z-index', '-2');
         canvasgrid.style('pointer-events', 'none');
 
         p.angleMode(p.DEGREES);
-    };  
+    };
 
     p.windowResized = () => {
         const pageHeight = getPageHeight();
@@ -45,8 +45,15 @@ const gridSketch = (p) => {
         p.drawingContext.setLineDash([1, 3.5]);
 
         p.line(p.windowWidth / 8 * 7, 0, p.windowWidth / 8 * 7, p.height);
+
         p.line(0, p.windowHeight / 13 * 5.25, p.windowWidth, p.windowHeight / 13 * 5.25);
         p.line(0, p.windowHeight / 13 * 11.05, p.windowWidth, p.windowHeight / 13 * 11.2);
+
+        p.line(0, p.windowHeight * 2 / 26 * 16.85, p.windowWidth, p.windowHeight * 2 / 26 * 16.85);
+        p.line(0, p.windowHeight * 2 / 26 * 22.65, p.windowWidth, p.windowHeight * 2 / 26 * 22.65);
+
+
+        p.line(0, p.windowHeight * 3 / 39 * 28.45, p.windowWidth, p.windowHeight * 3 / 39 * 28.45);
 
         p.drawingContext.setLineDash([]);
 
