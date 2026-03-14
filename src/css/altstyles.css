@@ -481,7 +481,7 @@ a {
     position: fixed;
     display: flex;
     align-items: center;
-    margin-top: 14px;
+    margin-top: 12px;
     left: 7.5px;
 
 
@@ -782,6 +782,9 @@ footer {
         /* flex-direction: row-reverse; */
     }
 
+    .paddedCon {
+        padding-bottom: 135px;
+    }
 
     /* .home {
         margin-left: 37.5px;
@@ -863,6 +866,10 @@ footer {
 
     header {
         border-width: .2rem;
+    }
+
+    .paddedCon {
+        padding-bottom: 135px;
     }
 
 
