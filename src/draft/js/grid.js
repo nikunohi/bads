@@ -54,6 +54,15 @@ const gridSketch = (p) => {
 
 
         p.line(0, p.windowHeight * 3 / 39 * 28.45, p.windowWidth, p.windowHeight * 3 / 39 * 28.45);
+        p.line(0, p.windowHeight * 3 / 39 * 34.25, p.windowWidth, p.windowHeight * 3 / 39 * 34.25);
+
+        // p.line(0, p.windowHeight * 4 / 52 * 40.05, p.windowWidth, p.windowHeight * 3 / 52 * 40.05);
+        // p.line(0, p.windowHeight * 4 / 52 * 34.25, p.windowWidth, p.windowHeight * 3 / 52 * 34.25);
+
+
+        p.line(0, p.windowHeight * 4 / 52 * 40.05, p.windowWidth, p.windowHeight * 4 / 52 * 40.05);
+        p.line(0, p.windowHeight * 4 / 52 * 45.85, p.windowWidth, p.windowHeight * 4 / 52 * 45.85);
+
 
         p.drawingContext.setLineDash([]);
 

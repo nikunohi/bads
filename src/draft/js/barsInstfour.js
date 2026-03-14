@@ -113,7 +113,7 @@ const barfourSketch = (p) => {
             otFont,
             textContent + " ",
             x,
-            p.windowHeight * .85 + 65,
+            p.windowHeight * .85+65,
             40,
             -.05
           );
