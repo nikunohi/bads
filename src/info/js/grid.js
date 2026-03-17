@@ -91,9 +91,11 @@ const gridSketch = (p) => {
         p.clear();
         p.stroke(125);
         p.strokeWeight(.5);
-        p.drawingContext.setLineDash([1, 3.5]);
+        p.drawingContext.setLineDash([1, 2.5]);
 
         p.line(p.windowWidth / 8, 0, p.windowWidth / 8, p.height);
+
+        
         p.line(0, p.windowHeight / 13 * 6.15, p.windowWidth, p.windowHeight / 13 * 6.15);
         p.line(0, p.windowHeight / 13 * 12, p.windowWidth, p.windowHeight / 13 * 12);
 

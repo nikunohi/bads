@@ -91,11 +91,12 @@ header {
 
 
 .paddedCon:not(:nth-child(2)) h1 {
-    color:  rgb(213, 214, 212);
+    color: rgb(213, 214, 212);
+
 }
 
 .paddedCon:not(:nth-child(2)) .title-line {
-    color: rgb(197, 198, 196);
+    color: rgb(196, 197, 195);
 }
 
 
@@ -163,17 +164,65 @@ header {
 }
 
 
+
+#hiddenPhoto0 {
+    display: none;
+}
+
+#hoverText0:hover>#hiddenPhoto0 {
+    display: flex;
+
+    animation-name: test2;
+    animation-duration: .7s;
+    animation-timing-function: steps(4, end);
+
+}
+
+
+
 #hiddenPhoto1 {
     display: none;
 }
 
 #hoverText1:hover>#hiddenPhoto1 {
     display: flex;
+
     animation-name: test2;
     animation-duration: .7s;
     animation-timing-function: steps(4, end);
 
 }
+
+
+#hiddenPhoto2 {
+    display: none;
+}
+
+#hoverText2:hover>#hiddenPhoto2 {
+    display: flex;
+
+    animation-name: test2;
+    animation-duration: .7s;
+    animation-timing-function: steps(4, end);
+
+}
+
+
+
+#hiddenPhoto3 {
+    display: none;
+}
+
+#hoverText3:hover>#hiddenPhoto3 {
+    display: flex;
+
+    animation-name: test2;
+    animation-duration: .7s;
+    animation-timing-function: steps(4, end);
+
+}
+
+
 
 
 
@@ -241,6 +290,7 @@ h2 {
     letter-spacing: -.09rem;
     line-height: 3.3rem;
     max-width: 85vw;
+
     /* animation: textChange 1s 1;
     animation-timing-function: steps(5, ease-in-out); */
 
@@ -468,6 +518,86 @@ a {
 
 
 }
+
+.link-hover-dead {
+    background-color: 'rgba(255, 69, 0,0)';
+    font-style: italic;
+    transition: background-color .35s;
+    transition-timing-function: steps(4, end);
+
+}
+
+.link-hover-dead h2 {
+    text-decoration: line-through;
+    transition: text-decoration .35s;
+    transition-timing-function: steps(4, end);
+
+}
+
+.link-hover-dead:hover {
+    /* background-color: rgb(255, 225, 0); */
+    background-color: rgb(196, 197, 195);
+    /* background-color: rgb(255, 165, 187); */
+
+
+
+
+}
+
+
+.link-dead {
+    background-color: 'rgba(255, 69, 0,0)';
+    font-style: italic;
+    transition: background-color .35s;
+    transition-timing-function: steps(4, end);
+
+}
+
+.link-dead h2 {
+    text-decoration: line-through;
+    transition: text-decoration .35s;
+    transition-timing-function: steps(4, end);
+
+}
+
+.link-dead:hover {
+    /* background-color: #ffabeb; */
+    background-color: rgb(255, 183, 165);
+
+
+
+
+}
+
+
+.link-dead-fr {
+    background-color: 'rgba(255, 69, 0,0)';
+    font-style: italic;
+    transition: background-color .35s;
+    transition-timing-function: steps(4, end);
+
+}
+
+.link-dead-fr h2 {
+    text-decoration: line-through;
+    transition: text-decoration .35s;
+    transition-timing-function: steps(4, end);
+
+}
+
+.link-dead-fr:hover {
+    /* background-color: #ffabeb; */
+    /* background-color: rgb(255, 165, 187); */
+    /* background-color: rgb(255, 244, 162); */
+    /* background-color: rgb(219, 219, 219); */
+    background-color: rgb(213, 214, 212);
+
+
+
+
+}
+
+
 
 
 .baddesignclub-header {
@@ -773,6 +903,30 @@ footer {
     }
 
 
+
+
+    #hoverText0:hover>#hiddenPhoto0 {
+        display: none;
+
+
+    }
+
+    #hoverText1:hover>#hiddenPhoto1 {
+        display: none;
+
+    }
+
+    #hoverText2:hover>#hiddenPhoto2 {
+        display: none;
+
+    }
+
+    #hoverText3:hover>#hiddenPhoto3 {
+        display: none;
+
+    }
+
+
 }
 
 @media (min-width: 376px) and (max-width: 499px) {
@@ -857,6 +1011,32 @@ footer {
         max-width: 65vw;
     }
 
+    .bg-photos {
+        display: none;
+    }
+
+
+    #hoverText0:hover>#hiddenPhoto0 {
+        display: none;
+
+
+    }
+
+    #hoverText1:hover>#hiddenPhoto1 {
+        display: none;
+
+    }
+
+    #hoverText2:hover>#hiddenPhoto2 {
+        display: none;
+
+    }
+
+    #hoverText3:hover>#hiddenPhoto3 {
+        display: none;
+
+    }
+
     /* .rule-box h2 {} */
 }
 
@@ -918,6 +1098,28 @@ footer {
         /* padding-bottom: 12.5px; */
 
 
+
+    }
+
+
+    #hoverText0:hover>#hiddenPhoto0 {
+        display: none;
+
+
+    }
+
+    #hoverText1:hover>#hiddenPhoto1 {
+        display: none;
+
+    }
+
+    #hoverText2:hover>#hiddenPhoto2 {
+        display: none;
+
+    }
+
+    #hoverText3:hover>#hiddenPhoto3 {
+        display: none;
 
     }
 }
