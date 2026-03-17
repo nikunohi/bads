@@ -156,7 +156,7 @@ header {
     display: flex;
     right: 20vw;
     position: absolute;
-    z-index: -4;
+    z-index: 1;
     opacity: 60%;
 
     background-color: #efefef;
@@ -607,7 +607,7 @@ a {
     border-width: 1pt;
     border-radius: 250rem;
     width: 27px;
-    height: 282px;
+    height: 275px;
     position: fixed;
     display: flex;
     align-items: center;
@@ -633,7 +633,7 @@ a {
     writing-mode: vertical-rl;
     text-orientation: upright;
     letter-spacing: -1rem;
-    padding-top: 9px;
+    padding-top: 12px;
     padding-left: 16px;
 
 }

@@ -52,7 +52,7 @@ const barTwoSketch = (p) => {
 
     function barfullTwo() {
         p.push();
-        p.translate(0, 62.5+19);
+        p.translate(0, 85);
         p.rotate(0);
         p.scale(1);
         p.fill('#efefef');
