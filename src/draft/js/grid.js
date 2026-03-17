@@ -48,7 +48,7 @@ const gridSketch = (p) => {
         p.line(p.windowWidth / 8 * 3, 0, p.windowWidth / 8 * 3, p.height);
         p.line(p.windowWidth / 8 * 7, 0, p.windowWidth / 8 * 7, p.height);
 
-        p.line(p.windowWidth / 8 * 1, 0, p.windowWidth / 8 * 1, p.height);
+        // p.line(0, 0, p.windowWidth, p.height);
 
         p.line(0, p.windowHeight / 13 * 5.25, p.windowWidth, p.windowHeight / 13 * 5.25);
         p.line(0, p.windowHeight / 13 * 8.15, p.windowWidth, p.windowHeight / 13 * 8.15);
