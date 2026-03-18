@@ -70,6 +70,14 @@ header {
 
 }
 
+.infoCon {
+    padding: 10px;
+    padding-top: 2vh;
+    padding-bottom: 100px;
+
+}
+
+
 .paddedCon {
     padding: 10px;
     padding-top: 2vh;
