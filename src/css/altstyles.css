@@ -63,22 +63,38 @@ header {
 }
 
 
+.titleCon {
+    padding: 2vh 10px 0px 10px;
+    border-bottom: 2 dotted rgb(215, 215, 215);
+    padding-bottom: 15px;
 
+}
 
 .paddedCon {
     padding: 10px;
     padding-top: 2vh;
     padding-bottom: 100px;
 
-
-
 }
+
+.paddedCon:nth-child(3) {
+    padding-top: 0;
+}
+
+/* .paddedCon:nth-child(3) .title-type {
+    border-bottom: 2 dotted rgb(215, 215, 215);
+    padding-bottom: 15px;
+  
+} */
 
 /* .paddedCon:not( :first-child)  {
 
 } */
 
-.paddedCon:not(:nth-child(2)) {
+
+
+
+.paddedCon:not(:nth-child(3)) {
     border-top: 2 dotted rgb(215, 215, 215);
 }
 
@@ -86,7 +102,7 @@ header {
         padding-bottom: 60vh;
 
 } */
-.paddedCon:not(:nth-child(2)) h2 {
+.paddedCon:not(:nth-child(3)) h2 {
     color: #a0a0a0;
 }
 
@@ -95,22 +111,25 @@ header {
 } */
 
 
-.paddedCon:not(:nth-child(2)) h1 {
+.paddedCon:not(:nth-child(3)) h1 {
     color: rgb(213, 214, 212);
 
 }
 
-.paddedCon:not(:nth-child(2)) .title-line {
+.paddedCon:not(:nth-child(3)) .title-line {
     color: rgb(196, 197, 195);
 }
 
 
-.paddedCon:nth-child(4) {
+.paddedCon:nth-child(5) {
     padding-bottom: 20vh;
     border-bottom: 2 dotted rgb(215, 215, 215);
 }
 
-
+.paddedCon:nth-child(3) .body-box:nth-child(1) {
+    padding-top: 13px;
+    /* background-color: red; */
+}
 
 
 .body-box {
@@ -122,6 +141,10 @@ header {
     animation: textChange 1s 1;
     animation-timing-function: steps(5, ease-in-out);
 
+}
+
+.paddedCon:nth-child(3) .body-box:nth-child(2) {
+    padding-top: 11.5px;
 }
 
 .body-box:nth-child(2) {
@@ -144,8 +167,10 @@ header {
     max-width: 48vw;
 } */
 
-.body-box:nth-child(3) h2 {
-    /* color: #a0a0a0; */
+.paddedCon:nth-child(3) .body-box:nth-child(3) h2 {
+    padding-top: 20px;
+    max-width: 45vw;
+    /* background-color: red; */
 }
 
 .body-box:nth-child(4) h2 {
