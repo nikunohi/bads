@@ -923,7 +923,7 @@ footer {
         padding-top: 50px;
     }
 
-    .body-box:nth-child(2) {
+    .body-box:nth-child(1) {
         padding-top: 30px;
     }
 
@@ -936,6 +936,11 @@ footer {
 
     h1 {
         max-width: 55vw;
+    }
+
+    .paddedCon:nth-child(3) .body-box:nth-child(3) h2 {
+        max-width: 55vw;
+        /* background-color: red; */
     }
 
     .body-box:nth-child(4) h2 {
@@ -1042,6 +1047,11 @@ footer {
         padding-top: 2.5px;
     }
 
+    .paddedCon:nth-child(3) .body-box:nth-child(3) h2 {
+        max-width: 73vw;
+        /* background-color: red; */
+    }
+
     .body-box:nth-child(4) h2 {
         max-width: 73vw;
 
@@ -1116,7 +1126,7 @@ footer {
     }
 
 
-    .paddedCon:not(:nth-child(2)) {
+    .paddedCon:not(:nth-child(3)) {
         border-top: 1 dotted rgb(195, 195, 195);
     }
 
@@ -1141,6 +1151,13 @@ footer {
         /* font-size: 3.3rem;
         line-height: 3rem; */
         line-height: 3.25rem;
+    }
+
+    .paddedCon:nth-child(3) .body-box:nth-child(3) h2 {
+        padding-top: 5px;
+
+        max-width: 70vw;
+        /* background-color: red; */
     }
 
     .body-box:nth-child(4) h2 {
