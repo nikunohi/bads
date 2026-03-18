@@ -219,6 +219,20 @@ header {
 }
 
 
+#hiddenPhotoPrime {
+    display: none;
+}
+
+#hoverPrime:hover>#hiddenPhotoPrime {
+    display: flex;
+
+    animation-name: test2;
+    animation-duration: .7s;
+    animation-timing-function: steps(4, end);
+
+}
+
+
 
 #hiddenPhoto1 {
     display: none;
