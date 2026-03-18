@@ -964,6 +964,10 @@ footer {
 
 
 
+    #hoverPrime:hover>#HiddenPhotoPrime {
+        display: none;
+    }
+
     #hoverText0:hover>#hiddenPhoto0 {
         display: none;
 
@@ -1079,6 +1083,10 @@ footer {
         display: none;
     }
 
+    #hoverPrime:hover>#HiddenPhotoPrime {
+        display: none;
+    }
+
 
     #hoverText0:hover>#hiddenPhoto0 {
         display: none;
@@ -1183,6 +1191,12 @@ footer {
 
 
     }
+
+
+    #hoverPrime:hover>#HiddenPhotoPrime {
+        display: none;
+    }
+
 
 
     #hoverText0:hover>#hiddenPhoto0 {
