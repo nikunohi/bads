@@ -1003,6 +1003,11 @@ footer {
     }
 
 
+    #hoverText4:hover>#hiddenPhoto4 {
+        display: none;
+
+    }
+
 }
 
 @media (min-width: 376px) and (max-width: 499px) {
@@ -1118,6 +1123,11 @@ footer {
     }
 
     #hoverText3:hover>#hiddenPhoto3 {
+        display: none;
+
+    }
+
+    #hoverText4:hover>#hiddenPhoto4 {
         display: none;
 
     }
