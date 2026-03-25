@@ -129,7 +129,7 @@ header {
 }
 
 
-.paddedCon:nth-child(5) {
+.paddedCon:nth-child(6) {
     padding-bottom: 20vh;
     border-bottom: 2 dotted rgb(215, 215, 215);
 }
@@ -1142,7 +1142,7 @@ footer {
 
 
 
-    .paddedCon:nth-child(4) {
+    .paddedCon:nth-child(6) {
         padding-bottom: 20vh;
         border-bottom: 1 dotted rgb(195, 195, 195);
     }
@@ -1182,7 +1182,7 @@ footer {
         /* background-color: red; */
     }
 
-    .body-box:nth-child(4) h2 {
+    .body-box:nth-child(6) h2 {
 
         padding-top: 5px;
         max-width: 70vw;
