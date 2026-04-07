@@ -290,6 +290,20 @@ header {
 }
 
 
+#hiddenPhoto5 {
+    display: none;
+}
+
+#hoverText0:hover>#hiddenPhoto5 {
+    display: flex;
+
+    animation-name: test2;
+    animation-duration: .7s;
+    animation-timing-function: steps(4, end);
+
+}
+
+
 
 
 
@@ -1008,6 +1022,11 @@ footer {
 
     }
 
+    #hoverText5:hover>#hiddenPhoto5 {
+        display: none;
+
+    }
+
 }
 
 @media (min-width: 376px) and (max-width: 499px) {
@@ -1132,6 +1151,11 @@ footer {
 
     }
 
+    #hoverText5:hover>#hiddenPhoto5 {
+        display: none;
+
+    }
+
     /* .rule-box h2 {} */
 }
 
@@ -1242,6 +1266,11 @@ footer {
     }
 
     #hoverText4:hover>#hiddenPhoto4 {
+        display: none;
+
+    }
+
+    #hoverText5:hover>#hiddenPhoto5 {
         display: none;
 
     }
