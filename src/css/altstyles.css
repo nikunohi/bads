@@ -129,7 +129,7 @@ header {
 }
 
 
-.paddedCon:nth-child(7) {
+.paddedCon:nth-child(8) {
     padding-bottom: 20vh;
     border-bottom: 2 dotted rgb(215, 215, 215);
 }
@@ -294,7 +294,7 @@ header {
     display: none;
 }
 
-#hoverText0:hover>#hiddenPhoto5 {
+#hoverText5:hover>#hiddenPhoto5 {
     display: flex;
 
     animation-name: test2;
@@ -1189,7 +1189,7 @@ footer {
 
 
 
-    .paddedCon:nth-child(7) {
+    .paddedCon:nth-child(8) {
         padding-bottom: 20vh;
         border-bottom: 1 dotted rgb(195, 195, 195);
     }
