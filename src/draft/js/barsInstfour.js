@@ -47,13 +47,19 @@ const barfourSketch = (p) => {
 
     p.angleMode(p.DEGREES);
 
-    opentype.load(interFontLink, (err, font) => {
-      if (err) {
-        console.error(err);
-      } else {
-        otFont = font;
-      }
-    });
+    // opentype.load(interFontLink, (err, font) => {
+    //   if (err) {
+    //     console.error(err);
+    //   } else {
+    //     otFont = font;
+    //   }
+    // });
+
+    fetch(interFontLink)
+      .then(response => response.arrayBuffer())
+      .then(buffer => {
+        otFont = opentype.parse(buffer);
+      });
 
     // speedx = -1.25;
     // speedy = 1;
@@ -113,7 +119,7 @@ const barfourSketch = (p) => {
             otFont,
             textContent + " ",
             x,
-            p.windowHeight * .85+65,
+            p.windowHeight * .85 + 65,
             40,
             -.05
           );

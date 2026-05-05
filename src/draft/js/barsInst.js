@@ -22,13 +22,20 @@ const barTwoSketch = (p) => {
 
         p.angleMode(p.DEGREES);
 
-        opentype.load(interFontUrl, (err, font) => {
-            if (err) {
-                console.error(err);
-            } else {
-                otFont = font;
-            }
-        });
+        // opentype.load(interFontUrl, (err, font) => {
+        //     if (err) {
+        //         console.error(err);
+        //     } else {
+        //         otFont = font;
+        //     }
+        // });
+
+        fetch(interFontUrl)
+            .then(response => response.arrayBuffer())
+            .then(buffer => {
+                otFont = opentype.parse(buffer);
+            });
+
 
         loxTwo = p.windowHeight / 2;
     };

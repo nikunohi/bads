@@ -42,13 +42,20 @@ const barSketch = (p) => {
 
     p.angleMode(p.DEGREES);
 
-    opentype.load(interFontLink, (err, font) => {
-      if (err) {
-        console.error(err);
-      } else {
-        otFont = font;
-      }
-    });
+    // opentype.load(interFontLink, (err, font) => {
+    //   if (err) {
+    //     console.error(err);
+    //   } else {
+    //     otFont = font;
+    //   }
+    // });
+
+
+    fetch(interFontLink)
+      .then(response => response.arrayBuffer())
+      .then(buffer => {
+        otFont = opentype.parse(buffer);
+      });
 
 
     speedx = -1;

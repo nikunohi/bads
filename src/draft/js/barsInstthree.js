@@ -21,18 +21,25 @@ const barthreeSketch = (p) => {
 
     p.angleMode(p.DEGREES);
 
-    opentype.load(interFontLink, (err, font) => {
-      if (err) {
-        console.error(err);
-      } else {
-        otFont = font;
-      }
-    });
+    // opentype.load(interFontLink, (err, font) => {
+    //   if (err) {
+    //     console.error(err);
+    //   } else {
+    //     otFont = font;
+    //   }
+    // });
+
+
+    fetch(interFontLink)
+      .then(response => response.arrayBuffer())
+      .then(buffer => {
+        otFont = opentype.parse(buffer);
+      });
 
     speedx = -1;
     speedy = 1;
     lox = p.windowHeight / 3;
- 
+
   };
 
   p.windowResized = () => {
@@ -44,10 +51,10 @@ const barthreeSketch = (p) => {
     p.clear();
 
     if (lox < -325) lox = p.width;
-   
+
 
     lox += speedx;
- 
+
 
     barfull(0, 1);
     counter++;
@@ -55,12 +62,12 @@ const barthreeSketch = (p) => {
 
   function barfull() {
     p.push();
-    p.translate(0, 110+10);
+    p.translate(0, 110 + 10);
     p.rotate(0);
     // p.fill('#e6e6e6');
-    
+
     p.fill('#efefef');
-    p.scale(1 );
+    p.scale(1);
 
     p.rect(0, 12, p.windowWidth + 10, 20);
     bartext(lox);
