@@ -251,7 +251,7 @@ const barfourSketch = (p) => {
     p.scale(1);
 
 
-    p.image(img, 9, 0, 95, 95);
+    p.image(img, 6, -1, 95, 95);
 
 
 
