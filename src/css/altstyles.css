@@ -51,7 +51,7 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 2;
     /* background-color: #efefef; */
@@ -59,14 +59,16 @@ header {
     border-bottom-style: solid;
     border-width: .1rem; */
     padding: 8px 5px 0px 5px;
+    
     /* width: 10%; */
 }
 
 
 .titleCon {
-    padding: 2vh 10px 0px 10px;
+    padding-left: 10px;
     border-bottom: 2 dotted rgb(215, 215, 215);
     padding-bottom: 15px;
+    padding-top: 45px;
 
 }
 
