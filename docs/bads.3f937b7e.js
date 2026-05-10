@@ -1,0 +1,2 @@
+let e;function t(){let t=document.querySelector("[data-scroll-container]");t&&(e=new LocomotiveScroll({el:t,smooth:!0,smartphone:{smooth:!0,multiplier:3,breakpoint:767},tablet:{smooth:!0,breakpoint:1024}}))}document.addEventListener("DOMContentLoaded",()=>{t()});let o=window.innerWidth;window.addEventListener("resize",()=>{let n=window.innerWidth;(o>1024&&n<=1024||o<=1024&&n>1024)&&(e&&"function"==typeof e.destroy&&e.destroy(),t()),o=n});
+//# sourceMappingURL=bads.3f937b7e.js.map
